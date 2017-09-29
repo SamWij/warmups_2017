@@ -1,0 +1,38 @@
+
+body{
+  background-color: #000;
+}
+
+#words{
+  display: none; /* hide our block of text, we're just using it as a data source in our Javascipt */
+}
+
+.word{
+  font-family: Georgia, serif;
+  font-size: 60pt;
+  color: #FFF;
+  display: none; /* start with our word divs hidden, so they will fade in nicely */
+  position: absolute; /* position will need to be absolute so we can use jQuery to place our divs randomly */
+  z-index: -1000000; /* prevent words from obscuring our GUI controls */
+}
+
+.fullscreen{
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /*top: 0;
+    left: 0;*/
+    display: none;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    /*transform:scale(1);
+    transition:all 4s ease-in;*/
+}
+/*
+.zoom {
+    transform: scale(2);
+
+}*/
